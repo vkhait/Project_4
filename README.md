@@ -2,13 +2,13 @@
 
  ![image](https://www.houston-perio.com/wp-content/uploads/2019/07/STROKE.jpg)
 
-Dataset used: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
-
 ## Files
   - [Jupiter notebook code with dropeed NA BMI](Project_4_dropped_BMI_values.ipynb)
   - [Jupiter notebook code with replaced NA BMI with average](Project_4_Stroke_prediction_mean_BMI.ipynb)
   - [Resources](Resources)
   - [Images](Images)
+    
+Dataset used: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
 Hanna Jaskiewicz 
 Issa Issa 
@@ -73,11 +73,12 @@ The goal of this project is use machine learning to predict if a person will hav
     * Imbalance-learn
     * scipy
     * Warnings
-## 1.1.2 Load Datasets
-The data was loaded using pd.read_csv('file_name')
+    * pycaret.classification
 ## 1.2 Data Cleaning
 * The Id column was dropped
-* The missing values in BMI was replaced by average mean
+* The missing values in BMI:
+  - was replaced by average mean
+  - was dropped
 * In gender column, Other gender type was dropped
 * The data was split into train and test set
 ## 1.3 Exploratory Data analysis
@@ -92,6 +93,7 @@ The data was loaded using pd.read_csv('file_name')
 * Hypertension is positively correlated to stroke. Hypertension increase the likelihood of stroke
 * Heart_disease is positively correlated to stroke. Presence of an heart_disease increase the likelihood of having stroke
 * People living in Rural areas are less likely to have stroke
+## Next steps for model where BMI null values were replaced with average value.
 ## 1.4 Data preprocessing
 * The target and features were seperated
 * Label Encoder was used on ever_married column
@@ -109,7 +111,34 @@ The data was loaded using pd.read_csv('file_name')
 ## Feature Importance
 ![Feature Importance](https://github.com/issaissa2608/Stroke_prediction/assets/123243046/54d1e07d-b94b-471a-a4d5-fe02f1c6d417)
 
+## Next steps for model where BMI null values were dropped.
+## 1.4 Data preprocessing
+- Label conventer was used on ever married, gender, work type, smoking status and residence type columns
+- Scaler was used on the numerical variables
+- The target and features were seperated
+- Pycaret was used to find the best model
+## 1.5 Model Fitting
+* Dummy classifier
+* Linear Discriminant Analysis
+## 1.7 Model Evaluation
+![dummy](Images/dc.png)
+True Negatives: 1119 False Positives: 0 False Negatives: 60 True Positives: 0
 
+As we can see the accuracy of the model is quite high 94.91%, but from the confusion matrix could be seen that all the prediction is just negative, so I wouldn't recommend to use that model to predict stroke risk, because so far it's just gives us negative result. Deeper research need to be done to see the model prediction potential.
+
+![dummy](Images/lra.png)
+
+True Negatives: 1110 False Positives: 9 False Negatives: 53 True Positives: 7
+
+As we can see the accuracy of the model is quite high 94.74%.
+
+## Model comparison
+
+As we can see above Dummy Classifier and Linear Discriminant Analysis gives us almost same accuracy score 94.91% vs 94.74%. But after discovering confusion matrix my suggestian is to use Linear Discriminant Analysis, because the prediction outcomes are more variacative, and Dummy Classifier model need deeper learing.
+
+# Try yourself
+Based on Linear Discriminant Analysis model was created play area, where user could type values and model is predicting the outcome: stroke positive or negative.
+![dummy](Images/pred.png)
 
 # References
 https://scikit-learn.org/stable/modules/model_evaluation.html
