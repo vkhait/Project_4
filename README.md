@@ -1,5 +1,6 @@
 # Stroke Prediction
 
+ ![image](https://www.houston-perio.com/wp-content/uploads/2019/07/STROKE.jpg)
 
 Dataset used: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
