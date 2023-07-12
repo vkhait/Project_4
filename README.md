@@ -4,6 +4,12 @@
 
 Dataset used: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
+## Files
+  - [Jupiter notebook code with dropeed NA BMI](Project_4_dropped_BMI_values.ipynb)
+  - [Jupiter notebook code with replaced NA BMI with average](Project_4_Stroke_prediction_mean_BMI.ipynb)
+  - [Resources](Resources)
+  - [Images](Images)
+
 Hanna Jaskiewicz 
 Issa Issa 
 Violetta Antonova 
