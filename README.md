@@ -122,6 +122,7 @@ The goal of this project is use machine learning to predict if a person will hav
 * Linear Discriminant Analysis
 ## 1.7 Model Evaluation
 ![dummy](Images/dc.png)
+
 True Negatives: 1119 False Positives: 0 False Negatives: 60 True Positives: 0
 
 As we can see the accuracy of the model is quite high 94.91%, but from the confusion matrix could be seen that all the prediction is just negative, so I wouldn't recommend to use that model to predict stroke risk, because so far it's just gives us negative result. Deeper research need to be done to see the model prediction potential.
@@ -138,6 +139,7 @@ As we can see above Dummy Classifier and Linear Discriminant Analysis gives us a
 
 # Try yourself
 Based on Linear Discriminant Analysis model was created play area, where user could type values and model is predicting the outcome: stroke positive or negative.
+
 ![dummy](Images/pred.png)
 
 # References
