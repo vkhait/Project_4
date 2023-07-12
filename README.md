@@ -1,8 +1,7 @@
-## Project 4
+# Stroke Prediction
 
 
 ![image](https://www.houston-perio.com/wp-content/uploads/2019/07/STROKE.jpg)
-# Stroke Prediction
 
 Dataset used: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
@@ -13,7 +12,7 @@ Vera Styles
 
 Project aim: to predict the risk of strokes based on different circumstances (i.e. age, employment, bmi etc.)
 
-# Steps to be taken:
+## Steps to be taken:
 
 * Clean the dataset
 * Build a machine learning model to perform predictions
@@ -22,17 +21,17 @@ Project aim: to predict the risk of strokes based on different circumstances (i.
 * Create presentation in Tableau
 
 
-# The following will be used:
+## The following will be used:
 
 Python to clean the dataset
 Python to create the machine learning model
 Tableau to create visualizations and presentation
 
 
-## Project Realisation
+# Project Realisation
 
 
-# Tableau:
+## Tableau:
 
 We did some basic visualizations with Tableau to see what conclusions we could draw from the dataset. The main conclusions were: 
 
