@@ -1,7 +1,4 @@
-# Project_4
-Group Project 4
-# Project_4
-![image](https://www.houston-perio.com/wp-content/uploads/2019/07/STROKE.jpg)
+
 # 1.1 Background
 According to Mayo clinic **"An ischemic stroke occurs when the blood supply to part of the brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients. Brain cells begin to die in minutes.A stroke is a medical emergency, and prompt treatment is crucial."**
 The goal of this project is use machine learning to predict if a person will have stroke based on some features
